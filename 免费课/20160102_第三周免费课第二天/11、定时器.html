@@ -11,16 +11,16 @@
 
     //window.setInterval([function],[interval]) ->设置一个定时器,interval是我们设置的等待的时间(ms),当到达时间后执行对应的[function],执行完成后,以后每隔这么长的时间,都会重新的执行[function] ->执行多次
 
-    //    var count = 0;
-    //    window.setTimeout(function () {
-    //        count++;
-    //        console.log(count);
-    //    }, 1000);
+        var count = 0;
+//        window.setTimeout(function () {
+//            count++;
+//            console.log(count);
+//        }, 1000);
 
-    //    window.setInterval(function () {
-    //        count++;
-    //        console.log(count);
-    //    }, 1000);
+        window.setInterval(function () {
+            count++;
+            console.log(count);
+        }, 1000);
 
 
     //2、关于定时器的返回值
@@ -38,17 +38,17 @@
     //window.clearTimeout(timer);
     //window.clearInterval(timer3);
 
-
-    var count = 0;
-    var timer = window.setInterval(function () {
-        count++;
-        console.log(count);
-
-        //当到达10的时候我们结束本次动画,清除对应的定时器
-        if (count >= 10) {
-            window.clearInterval(timer);
-        }
-    }, 1000);
+//
+//    var count = 0;
+//    var timer = window.setInterval(function () {
+//        count++;
+//        console.log(count);
+//
+//        //当到达10的时候我们结束本次动画,清除对应的定时器
+//        if (count >= 10) {
+//            window.clearInterval(timer);
+//        }
+//    }, 1000);
 </script>
 </body>
 </html>
