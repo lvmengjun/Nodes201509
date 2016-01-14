@@ -38,14 +38,11 @@
 <script type="text/javascript">
     //DOM映射:页面中的HTML标签、JS中获取的HTML对象
     //HTML标签和JS中的元素对象是紧紧的绑定到一起的->其中一个改变,另外一个也会跟着发生改变
-
     var oUl = document.getElementById("ul1");
     var oLis = oUl.getElementsByTagName("li");
     console.log(oLis.length);//->5
-
     var oLi = document.createElement("li");
     oUl.appendChild(oLi);
-
     console.log(oLis.length);//->6 添加一个li后,不需要重新的获取,也可以得到最新的结果 ->DOM映射 oLis这个容器集合和页面中的oUl这个容器是紧紧的绑定到一起的,当页面中oUl里面的数量发生了改变,oLis这个集合不需要重新的获取,也会跟着发生改变
 
     //oLis[0]是JS集合中的第一个li和页面中的第一个li标签是存在映射关系的

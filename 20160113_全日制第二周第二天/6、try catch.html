@@ -33,13 +33,13 @@
     //throw new TypeError("");//->类型错误
     //throw new RangeError("");//->范围错误
 
-    //    try{
-    //        console.log(num);
-    //    }catch(e){
-    //        //e.message
-    //        throw new ReferenceError("当前网络繁忙~请稍后再试~");
-    //    }
-    //    console.log("ok");
+        try{
+            console.log(num);
+        }catch(e){
+            //e.message
+            throw new ReferenceError("当前网络繁忙~请稍后再试~");
+        }
+        console.log("ok");
 
     //2、使用try catch进行浏览器兼容检测和处理(前提：不兼容的情况下会报错,这样的才可以在catch中进行不兼容处理)
 </script>
