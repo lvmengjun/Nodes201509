@@ -24,11 +24,11 @@
     //var ary = Array.prototype.slice.call(oLis, 0);
 
     //在IE6~8下不兼容上述的操作(arguments这个类数组是兼容的,只有DOM元素集合才不兼容) ->报错:Array.prototype.slice: 'this' 不是 JavaScript 对象
-    //    var ary = [];
-    //    for (var i = 0; i < oLis.length; i++) {
-    //        ary[ary.length] = oLis[i];
-    //    }
-    //    console.dir(ary);
+        var ary = [];
+        for (var i = 0; i < oLis.length; i++) {
+            ary[ary.length] = oLis[i];
+        }
+        console.dir(ary);
 
     //    var ary = [];
     //    try {
