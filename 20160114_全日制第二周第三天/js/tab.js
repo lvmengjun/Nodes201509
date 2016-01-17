@@ -66,6 +66,7 @@ function sortList(n) {
     changeBg();
 }
 
+
 for (var i = 0; i < oThs.length; i++) {
     var curTh = oThs[i];
     if (curTh.className === "cursor") {
