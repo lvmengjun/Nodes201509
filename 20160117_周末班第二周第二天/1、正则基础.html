@@ -39,10 +39,10 @@
     //    var reg = /^\d+$/;
     //    console.log(reg.test("2016"));//->true
     //
-    //    reg = new RegExp("^\d+$");
-    //    console.log(reg.test("2016"));//->false
-    //    console.log(reg.test("\ddddd"));//->true ->因为实例创建我们传递进来的是字符串,所以写的\d不是代表一个0-9的数字,而是一个字符\和一个字符d,+是让d出现一到多次
-    //
+        reg = new RegExp("^\d+$");
+        console.log(reg.test("2016"));//->false
+        console.log(reg.exec("\ddddd"));//->true ->因为实例创建我们传递进来的是字符串,所以写的\d不是代表一个0-9的数字,而是一个字符\和一个字符d,+是让d出现一到多次
+
     //    reg = new RegExp("^\\d+$");
     //    console.log(reg.test("2016"));//->true
 
@@ -74,9 +74,9 @@
     //console.log(reg.test("0.9"));//->true
     //console.log(reg.test("0|9"));//->true
 
-    reg = /^0\\.\d$/;//->\.把具有特殊意义的.转换为只能代表一个小数点的意思
-    console.log(reg.test("0\\o9"));//->true
-    console.log(reg.test("0|9"));//->false
+//    reg = /^0\\.\d$/;//->\.把具有特殊意义的.转换为只能代表一个小数点的意思
+//    console.log(reg.test("0\\o9"));//->true
+//    console.log(reg.test("0|9"));//->false
 
     //reg = /^http:\/\/www$/; ->"http://www"
 

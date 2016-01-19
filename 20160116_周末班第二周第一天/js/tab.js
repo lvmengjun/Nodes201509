@@ -41,8 +41,6 @@ function sortList(n) {
     for (var k = 0; k < oThs.length; k++) {
         k !== n ? oThs[k].flag = -1 : null;
     }
-
-
     var ary = utils.listToArray(oRows);
     ary.sort(function (a, b) {
         var curIn = a.cells[n].innerHTML, nexIn = b.cells[n].innerHTML;
